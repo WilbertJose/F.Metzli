@@ -1,5 +1,6 @@
 package com.example.fmetzli.adapter;
-
+    /* este apartado es para que los items se agreguen en casillas individuales
+    en el apartado popular productos*/
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -46,7 +47,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewhold
         Glide.with(context)
                 .load(drawableResourced)
                 .transform(new GranularRoundedCorners(30,30,0,0))
-                .into(binding.camisadevestir1);
+                .into(binding.item1);
 
 
 

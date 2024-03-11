@@ -417,8 +417,8 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/gris_oscuro"
-            android:src="@drawable/qrcode"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_home_black_24dp"
             android:tintMode="@color/white"
             app:layout_anchor="@id/appBar"
             app:maxImageSize="30dp">

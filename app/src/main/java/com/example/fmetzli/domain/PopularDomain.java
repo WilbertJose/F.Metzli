@@ -1,5 +1,5 @@
 package com.example.fmetzli.domain;
-
+/* aqui se agregaran las variables para la informacion de los produtos */
 public class PopularDomain {
     private String title;
     private String picUrl;

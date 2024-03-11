@@ -9,7 +9,7 @@
     android:elevation="3dp">
 
     <ImageView
-        android:id="@+id/camisadevestir1"
+        android:id="@+id/item_1"
         android:layout_width="175dp"
         android:layout_height="155dp"
         android:layout_marginStart="8dp"
@@ -20,14 +20,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/camisadevestir1" />
+        app:srcCompat="@drawable/item_1" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="55dp"
         android:layout_height="22dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/white_background"
+        android:background="@drawable/white_background3"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/camisadevestir1" />
+        app:layout_constraintTop_toBottomOf="@+id/item_1" />
 
     <TextView
         android:id="@+id/Titulodeproducto1"
@@ -98,9 +98,9 @@
         android:id="@+id/opinionp1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="5"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/comentariosimg1"
         app:layout_constraintTop_toTopOf="@+id/comentariosimg1"
-        tools:layout_editor_absoluteX="118dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="118dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,8 @@
 package com.example.fmetzli.activity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.Window;
 
 import com.example.fmetzli.R;
 import com.example.fmetzli.adapter.PopularAdapter;
@@ -8,6 +10,7 @@ import com.example.fmetzli.domain.PopularDomain;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -31,7 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        statusBarColor();
         initRecyclerView();
+    }
+
+    private void statusBarColor() {
+        Window window=MainActivity.this.getWindow();
+        window.setStatusBarColor(ContextCompat.getColor(MainActivity.this,R.color.gris_oscuro));
     }
 
     private void initRecyclerView() {
