@@ -30,41 +30,47 @@
                     android:layout_marginEnd="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/editTextText"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.5">
+                    app:layout_constraintVertical_bias="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp">
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/logo"
                         android:layout_width="46dp"
                         android:layout_height="44dp"
-                        android:src="@tools:sample/avatars"
                         app:srcCompat="@drawable/fd_2__3_"
                         tools:ignore="MissingConstraints" />
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/notificacion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:srcCompat="@drawable/bell" />
+                        tools:srcCompat="@drawable/bell"
+                        android:layout_marginRight="16dp" />
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/Powern"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
                         android:src="@drawable/red_circle"
-                        app:layout_constraintBottom_toTopOf="@+id/imageView"
+                        app:layout_constraintBottom_toTopOf="@+id/Powern"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView"
-                        app:layout_constraintTop_toTopOf="@+id/imageView" />
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/Powern"
+                        app:layout_constraintTop_toTopOf="@+id/Powern"
+                        app:layout_constraintVertical_bias="0.0"
+                        tools:ignore="NotSibling"
+                        android:layout_marginRight="16dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <EditText
-                    android:id="@+id/editTextText"
+                    android:id="@+id/edittxtbuscar"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginStart="14dp"
@@ -77,7 +83,7 @@
                     android:ems="10"
                     android:hint="Buscar"
                     android:inputType="text"
-                    android:pedding="8dp"
+                    android:padding="8dp"
                     android:textColor="#9aa2aa"
                     android:textSize="16sp" />
 
@@ -102,7 +108,7 @@
                     app:shapeAppearanceOverlay="@style/circular" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/oferta"
                     android:layout_width="201dp"
                     android:layout_height="50dp"
                     android:layout_marginStart="144dp"
@@ -112,19 +118,20 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/top_banner"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="144dp" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button"
+                    android:id="@+id/buttonbuy"
                     style="@android:style/Widget.Button"
                     android:layout_width="102dp"
                     android:layout_height="48dp"
-                    android:layout_marginBottom="12dp"
+                    android:layout_marginBottom="16dp"
                     android:background="@drawable/gris_background"
                     android:backgroundTint="@color/white"
                     android:text="Comprar"
                     android:textColor="@color/black"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:rippleColor="@color/white"
                     app:strokeColor="#FFFFFF"
                     tools:ignore="MissingConstraints"
@@ -133,14 +140,15 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/categoriastxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Categorias"
                 android:layout_marginStart="24dp"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:layout_marginLeft="24dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -157,13 +165,13 @@
                     tools:layout_weight="0.2">
 
                     <ImageView
-                        android:id="@+id/imageView9"
+                        android:id="@+id/digitalesimg1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/cat1" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/digitalestxt1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -172,7 +180,7 @@
                         android:textColor="@color/black"
 
 
-                        />
+                        android:gravity="center_horizontal" />
 
                 </LinearLayout>
 
@@ -184,14 +192,14 @@
                     tools:layout_weight="0.2">
 
                     <ImageView
-                        android:id="@+id/imageView9"
+                        android:id="@+id/accesoriosimg1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/cat2"
                         tools:ignore="DuplicateIds" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/aceesoriostxt1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -200,7 +208,8 @@
                         android:textColor="@color/black"
 
 
-                        tools:ignore="DuplicateIds" />
+                        tools:ignore="DuplicateIds"
+                        android:gravity="center_horizontal" />
 
                 </LinearLayout>
 
@@ -212,14 +221,14 @@
                     tools:layout_weight="0.2">
 
                     <ImageView
-                        android:id="@+id/imageView9"
+                        android:id="@+id/coloniasimg1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/cat4"
                         tools:ignore="DuplicateIds" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/coloniastxt1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -228,7 +237,8 @@
                         android:textColor="@color/black"
 
 
-                        tools:ignore="DuplicateIds" />
+                        tools:ignore="DuplicateIds"
+                        android:gravity="center_horizontal" />
 
                 </LinearLayout>
 
@@ -240,14 +250,14 @@
                     tools:layout_weight="0.2">
 
                     <ImageView
-                        android:id="@+id/imageView9"
+                        android:id="@+id/vertodoimg1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/cat5"
                         tools:ignore="DuplicateIds" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/vertodotxt1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -256,7 +266,8 @@
                         android:textColor="@color/black"
 
 
-                        tools:ignore="DuplicateIds" />
+                        tools:ignore="DuplicateIds"
+                        android:gravity="center_horizontal" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -268,14 +279,15 @@
                 android:layout_marginTop="16dp">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/popproductstxt1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:text="Productos populares"
                     android:textColor="@color/black"
                     android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginLeft="24dp" />
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
@@ -306,7 +318,7 @@
             android:padding="4dp"
             app:fabCradleVerticalOffset="1dp"
             app:fabCradleMargin="5dp"
-            app:fabCreadleRoundedCornerRadius="50dp">
+            app:fabCradleRoundedCornerRadius="50dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -319,14 +331,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/explorarimg1"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
                         android:src="@drawable/btn_1" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/explorartxt1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -341,21 +353,22 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/guardadoimg1"
                         android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:src="@drawable/btn_2"
                         tools:ignore="DuplicateIds" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/guardadotxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Guardado"
                         android:textAlignment="center"
-                        tools:ignore="DuplicateIds" />
+                        tools:ignore="DuplicateIds"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -380,7 +393,8 @@
                         android:layout_marginTop="4dp"
                         android:text="Explorar"
                         android:textAlignment="center"
-                        tools:ignore="DuplicateIds" />
+                        tools:ignore="DuplicateIds"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -390,7 +404,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/carritodecompraimg1"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
@@ -398,13 +412,14 @@
                         tools:ignore="DuplicateIds" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/carritodecomprastxt1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Carrito"
                         android:textAlignment="center"
-                        tools:ignore="DuplicateIds" />
+                        tools:ignore="DuplicateIds"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -414,7 +429,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/myperfilimg1"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
@@ -422,13 +437,14 @@
                         tools:ignore="DuplicateIds" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/myperfiltxt1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Perfil"
                         android:textAlignment="center"
-                        tools:ignore="DuplicateIds" />
+                        tools:ignore="DuplicateIds"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
             </LinearLayout>
 

@@ -30,6 +30,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewhold
     @Override
     public PopularAdapter.Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         binding=ViewholderListBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
+        context= parent.getContext();
         return new Viewholder(binding);
     }
 
