@@ -63,6 +63,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="14dp"
                     android:layout_marginBottom="14dp"
+                    android:autofillHints=""
                     android:background="@drawable/editext_backgrounp"
                     android:drawableStart="@drawable/search_icon"
                     android:drawablePadding="8dp"
@@ -71,8 +72,7 @@
                     android:inputType="text"
                     android:padding="8dp"
                     android:textColor="#9aa2aa"
-                    android:textSize="16sp"
-                    android:autofillHints="" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -128,11 +128,11 @@
                 android:id="@+id/categorias"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Categorias"
                 android:layout_marginStart="24dp"
+                android:text="Categorias"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -173,8 +173,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
                     android:orientation="vertical"
-                    tools:layout_weight="0.2"
-                    tools:ignore="UseCompoundDrawables">
+                    tools:ignore="UseCompoundDrawables"
+                    tools:layout_weight="0.2">
 
                     <ImageView
                         android:id="@+id/categoria2"
@@ -189,7 +189,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Accesorios"
                         android:textAlignment="center"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -204,7 +204,7 @@
                         android:id="@+id/categoria3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/cat4"/>
+                        app:srcCompat="@drawable/cat4" />
 
                     <TextView
                         android:id="@+id/categoriatxt3"
@@ -230,7 +230,7 @@
                     <ImageView
                         android:id="@+id/allcategorias"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         app:srcCompat="@drawable/cat5"
                         tools:ignore="DuplicateIds" />
 
@@ -252,8 +252,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/productospop"
@@ -270,9 +270,9 @@
                 android:id="@+id/PopularView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:clipToPadding="false"
                 android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"/>
+                android:layout_marginEnd="12dp"
+                android:clipToPadding="false" />
 
         </LinearLayout>
     </ScrollView>
@@ -286,15 +286,15 @@
 
 
         <com.google.android.material.bottomappbar.BottomAppBar
-            android:layout_width="match_parent"
             android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="42dp"
             android:background="@drawable/editext_backgrounp"
-            android:layout_margin="32dp"
-            app:fabCradleMargin="8dp"
-            app:fabCradleRoundedCornerRadius="50dp"
-            app:fabCradleVerticalOffset="6dp"
-            android:padding="4dp"
-            android:layout_height="60dp">
+            android:padding="6dp"
+            app:fabCradleMargin="7dp"
+            app:fabCradleRoundedCornerRadius="70dp"
+            app:fabCradleVerticalOffset="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -333,7 +333,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/btn_2"/>
+                        android:src="@drawable/btn_2" />
 
                     <TextView
                         android:id="@+id/guardadotxt"
@@ -341,7 +341,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Guardado"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -356,7 +356,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/btn_1"/>
+                        android:src="@drawable/btn_1" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -400,7 +400,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/btn_4"/>
+                        android:src="@drawable/btn_4" />
 
                     <TextView
                         android:id="@+id/miperfiltxt"
@@ -408,20 +408,20 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Perfil"
-                        android:textAlignment="center"/>
+                        android:textAlignment="center" />
                 </LinearLayout>
             </LinearLayout>
 
         </com.google.android.material.bottomappbar.BottomAppBar>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/qrcode"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_home_black_24dp"
+            android:tintMode="@color/white"
             app:layout_anchor="@id/appBar"
-            app:maxImageSize="30dp"
-            app:tint="@color/white"
-            app:backgroundTint="@color/gris_oscuro">
+            app:maxImageSize="30dp">
 
         </com.google.android.material.floatingactionbutton.FloatingActionButton>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
