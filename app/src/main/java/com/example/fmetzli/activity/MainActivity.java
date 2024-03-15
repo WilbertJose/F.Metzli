@@ -46,22 +46,27 @@ public class MainActivity extends AppCompatActivity {
     private void initRecyclerView() {
         ArrayList<PopularDomain> items=new ArrayList<>();
 
-        items.add(new PopularDomain("Camisa de vestir color negro","Item_1",15,4,500,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
+        items.add(new PopularDomain("Camisa de vestir color negro","item_4",15,4,500,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
                 "\n" +
                 "Está elaborada con tejido 65% poliéster y 35% algodón, es libre de arrugas, planchado facíl. Su estilo slim fit y su cuello abierto tipo ingles aportarán elegancia a tu look.\n" +
                 "\n" +
                 "¡Una prenda infaltable en tu closet!"));
-        items.add(new PopularDomain("Zapatos de vesir color negro","Item_2",10,5,250,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
+        items.add(new PopularDomain("Zapatos de vesir color negro","item_3",10,5,250,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
                 "\n" +
                 "Está elaborada con tejido 65% poliéster y 35% algodón, es libre de arrugas, planchado facíl. Su estilo slim fit y su cuello abierto tipo ingles aportarán elegancia a tu look.\n" +
                 "\n" +
                 "¡Una prenda infaltable en tu closet!"));
-        items.add(new PopularDomain("Saco de vestir Color Negro","Item_3",9,4,300,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
+        items.add(new PopularDomain("Saco de vestir Color Negro","item_2",9,4,300,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
                 "\n" +
                 "Está elaborada con tejido 65% poliéster y 35% algodón, es libre de arrugas, planchado facíl. Su estilo slim fit y su cuello abierto tipo ingles aportarán elegancia a tu look.\n" +
                 "\n" +
                 "¡Una prenda infaltable en tu closet!"));
-        items.add(new PopularDomain("Corbata color rojo","Item_4",10,4.5,100,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
+        items.add(new PopularDomain("Corbata color rojo","item_1",10,4.5,100,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
+                "\n" +
+                "Está elaborada con tejido 65% poliéster y 35% algodón, es libre de arrugas, planchado facíl. Su estilo slim fit y su cuello abierto tipo ingles aportarán elegancia a tu look.\n" +
+                "\n" +
+                "¡Una prenda infaltable en tu closet!"));
+        items.add(new PopularDomain("Corbata color verde","item_4",10,5.0 ,10,"Nuestra camisa CLASICA LISA Pierre Cardin, es perfecta para lucirla en tu día a día.\n" +
                 "\n" +
                 "Está elaborada con tejido 65% poliéster y 35% algodón, es libre de arrugas, planchado facíl. Su estilo slim fit y su cuello abierto tipo ingles aportarán elegancia a tu look.\n" +
                 "\n" +

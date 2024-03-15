@@ -9,7 +9,7 @@
     android:elevation="3dp">
 
     <ImageView
-        android:id="@+id/item_1"
+        android:id="@+id/camisa"
         android:layout_width="130dp"
         android:layout_height="155dp"
         android:layout_marginStart="8dp"
@@ -62,7 +62,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/item_1" />
+        app:layout_constraintTop_toBottomOf="@+id/camisa" />
 
     <TextView
         android:id="@+id/Titulodeproducto1"

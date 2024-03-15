@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -47,25 +49,19 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.Viewhold
         Glide.with(context)
                 .load(drawableResourced)
                 .transform(new GranularRoundedCorners(30,30,0,0))
-                .into(binding.item1);
-
-
+                .into(binding.camisa);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
         });
     }
     @Override
-    public int getItemCount() {
-        return items.size();
-    }
+    public int getItemCount() {return items.size();}
 
 
     public class Viewholder extends RecyclerView.ViewHolder {
-
         public Viewholder(ViewholderListBinding binding) {
             super(binding.getRoot());
         }

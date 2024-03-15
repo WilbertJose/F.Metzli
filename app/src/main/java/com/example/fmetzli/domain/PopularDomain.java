@@ -1,4 +1,5 @@
 package com.example.fmetzli.domain;
+
 /* aqui se agregaran las variables para la informacion de los produtos */
 public class PopularDomain {
     private String title;
@@ -7,8 +8,8 @@ public class PopularDomain {
     private double score;
     private int numberInChart;
     private double price;
-
     private String description;
+
 
     public PopularDomain(String title, String picUrl, int review, double score, double price, String description) {
         this.title = title;
